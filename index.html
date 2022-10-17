@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable =no">
+    <title>Hit the Bauble</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dokdo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="start">
+        <img class="image image-ball" src="./img/preview.png">
+        <button class="startButton">
+            <p class="words">Play Game</p>
+        </button>
+    </div>
+    <div class="selection hide">
+        <div class="back">
+            <div class="detail">
+                <h1 class="highlight">How to Play</h1>
+                <p>Tap on the ball to keep it in the air.</p>
+            </div>
+        </div>
+        <button class="startGame">
+            <p class="words">Start game</p>
+        </button>
+    </div>
+    <div class="game hide">
+            <div class="top">
+            <!--<div class="right">
+                <img class="icon hide" src="./img/help.png">
+                <img class="icon hide" src="./img/setting.png">
+            </div>--->
+            <div class="lower">
+                <img class="timer-background" src="./img/timerBackground.png">
+                <p class="timer-count">00</p>
+            </div>
+        </div>
+            <div class="game-background">
+                <div class="background">
+                    <div class="ball">
+                        <img class="size" src="./img/ball.png">
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    <div class="final hide">
+        <img class="text">
+        <img class="show">
+        <button class="playAgain">
+            <p class="words">Play again</p>
+        </button>    
+        <button class="home">
+            <p class="words">Back to home</p>
+        </button>  
+    </div>
+
+    <!--
+        <audio id="click" src="sound/click.wav"></audio>
+        <audio id="completed" src="./sound/completed.wav"></audio>
+        <audio id="lose" src="./sound/lose.wav"></audio>
+    --> 
+
+    <script src="script.js"></script>
+</body>
+</html>
