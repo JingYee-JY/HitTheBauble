@@ -195,6 +195,7 @@ button{
 .detail p {
     margin: 5px;
     font-size: 26px;
+    font-weight: 800;
 }
 
 .highlight{
@@ -257,12 +258,13 @@ p.instruction{
 
 .text{
     position: absolute;
-    top: 17px;
-    width: 95%;
+    top: 5px;
+    width: 85%;
 }
 
 .show{
-    width: 95%;
+    width: 100%;
+    margin-bottom: -35px;
 }
 
 .game-background{
@@ -304,19 +306,19 @@ p.instruction{
     }
     .detail p{
         font-size: 50px;
-        font-weight: 800;
     }
     .timer-count{
         font-size: 100px;
     }
-    .text{
-        width: 90%;
-    }
-    .show{
-        width: 80%;
-    }
     .final{
         background-position: 0;
+    }
+    .text{
+        width: 70%;
+    }
+    .show{
+        margin-top: -120px;
+        margin-bottom: -80px;
     }
 }
 
@@ -342,9 +344,6 @@ p.instruction{
     .text{
         width: 80%;
         top: 5px;
-    }
-    .show{
-        width: 70%;
     }
 }
 

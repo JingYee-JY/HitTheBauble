@@ -21,10 +21,10 @@ let startGame = false;
 let time;
 let touch;
 let currentHit;
-Lowhit = 2
-Mediumhit = 2.5
-fall = 1.5
-leftRight = 1.5
+Lowhit = 3
+Mediumhit = 3.5
+fall = 2.5
+leftRight = 2.5
 let hitforce
 let direction
 let rightEnd
@@ -81,17 +81,17 @@ function spawnBall(){
     ball.y = 0
     ball.x = Math.floor(border.width /4);
     if(border.width > 768){
+        Lowhit = 5
+        Mediumhit = 5.5
+        fall = 4.5
+        leftRight = 4.5
+        rightEnd = 400
+    }
+    if(border.width < 768){
         Lowhit = 3
         Mediumhit = 3.5
         fall = 2.5
         leftRight = 2.5
-        rightEnd = 400
-    }
-    if(border.width < 768){
-        Lowhit = 2
-        Mediumhit = 2.5
-        fall = 1.5
-        leftRight = 1.5
         rightEnd = 180
     }
     ball.style.top = ball.y + 'px';
