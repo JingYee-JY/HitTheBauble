@@ -10,6 +10,7 @@ const final= document.querySelector(".final");
 const background = document.querySelector(".background");
 const text = document.querySelector(".text");
 const show = document.querySelector(".show");
+const additional = document.querySelector(".additional");
 const homeButton = document.querySelector(".home")
 const playAgain = document.querySelector(".playAgain")
 
@@ -51,6 +52,7 @@ startGameButton.addEventListener("click", () => {
 playAgain.addEventListener("click", () => {
     //playClickSound()
     //let delay = setTimeout(() => {
+        additional.classList.add("hide")    
         final.classList.add("hide")
         start.classList.remove("hide")
     //}, 200);
@@ -161,6 +163,7 @@ function updateCountDown(){
             final.style.backgroundImage = "url('./img/winBackground.png')"
             text.src = "./img/winText.png"
             show.src = "./img/win.png"
+            additional.classList.remove("hide")
             game.classList.add("hide")
             final.classList.remove("hide")
         }

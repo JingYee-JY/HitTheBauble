@@ -69,8 +69,8 @@ body{
 }
 
 .startGame{
-    margin-top: 100px;
-    margin-bottom: -100px;
+    margin-top: 80px;
+    margin-bottom: -10px;
 }
 
 .words{
@@ -124,7 +124,7 @@ button{
     max-width: 450px;
 }
 .image{
-    width: 100%;
+    width: 90%;
     max-width: 450px;
 }
 .startBuutton{
@@ -273,7 +273,26 @@ p.instruction{
 
 .show{
     width: 100%;
-    margin-bottom: -35px;
+    margin-bottom: -70px;
+}
+.additional{
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 50%;
+}
+
+.dark{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 5px !important;
+}
+
+.additional p{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    margin-bottom: 1px;
 }
 
 .game-background{
@@ -326,8 +345,17 @@ p.instruction{
         width: 70%;
     }
     .show{
-        margin-top: -120px;
-        margin-bottom: -80px;
+        margin-top: -125px;
+        margin-bottom: -145px;
+    }
+    .additional{
+        top: 53%;
+    }
+    .dark{
+        font-size: 40px !important;
+    }
+    .additional p{
+        font-size: 30px;
     }
 }
 
@@ -358,7 +386,11 @@ p.instruction{
         margin-top: -5px;
     }
     .show{
-        margin-top: -100px;
+        margin-top: -60px;
+        margin-bottom: -90px;
+    }
+    .additional{
+        top: 51%;
     }
 }
 
