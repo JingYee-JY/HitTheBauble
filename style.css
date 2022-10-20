@@ -46,6 +46,7 @@ body{
 
 .final{
     gap:  0%;
+    background-position: center bottom;
 }
 
 .startButton, .startGame, .playAgain, .home{
@@ -80,6 +81,14 @@ body{
     align-items: center;
     display: flex;
     font-weight: 500;
+}
+
+.backButton{
+    position: absolute;
+    width: 15%;
+    height: auto;
+    top: 10px;
+    left: 10px;
 }
 
 .back{
@@ -344,6 +353,12 @@ p.instruction{
     .text{
         width: 80%;
         top: 5px;
+    }
+    .text{
+        margin-top: -5px;
+    }
+    .show{
+        margin-top: -100px;
     }
 }
 

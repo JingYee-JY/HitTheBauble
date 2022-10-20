@@ -27,7 +27,7 @@ fall = 2.5
 leftRight = 2.5
 let hitforce
 let direction
-let rightEnd
+let ballWidth
 
 
 startButton.addEventListener("click", () => {
@@ -81,19 +81,21 @@ function spawnBall(){
     ball.y = 0
     ball.x = Math.floor(border.width /4);
     if(border.width > 768){
+        ballWidth = 400
         Lowhit = 5
         Mediumhit = 5.5
         fall = 4.5
         leftRight = 4.5
-        rightEnd = 400
     }
     if(border.width < 768){
+        ballWidth = 200
         Lowhit = 3
         Mediumhit = 3.5
         fall = 2.5
         leftRight = 2.5
-        rightEnd = 180
     }
+    ball.style.width = ballWidth + "px";
+    ball.style.height = (ballWidth + 50) + "px";
     ball.style.top = ball.y + 'px';
     ball.style.left = ball.x + 'px';
 }
@@ -109,14 +111,14 @@ function moveBall(){
     if(direction == 1){
         ball.x = ball.x - leftRight
         ball.style.left = ball.x + 'px';
-        if(ball.x < - 20){
+        if(ball.x < 0){
             direction = 2
         }
     }
     if(direction == 2){
         ball.x = ball.x + leftRight
         ball.style.left = ball.x + 'px';
-        if(ball.x > (border.width - rightEnd)){
+        if(ball.x > Math.floor(border.width - ballWidth)){
             direction = 1
         }
     }
