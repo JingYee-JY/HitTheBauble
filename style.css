@@ -42,6 +42,7 @@ body{
 
 .game{
     background-image: url("./img/gameBackground.png");
+    background-position: top;
 }
 
 .final{
@@ -363,6 +364,9 @@ p.instruction{
 @media screen and (min-width:1200px){
     body{
       width: 100%;
+    }
+    .final{
+        background-position: center bottom;
     }
     .start,.selection,.final,.game,.game-container{
         max-width: 400px;
