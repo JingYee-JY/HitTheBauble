@@ -201,7 +201,6 @@ button{
 
 .detail{
     width: 90%;
-    margin-bottom: 15px;
     position: relative;
     display: flex;
     text-align: center;
@@ -211,13 +210,17 @@ button{
 }
 
 .detail p {
-    margin: 5px;
-    font-size: 26px;
+    margin: 0px;
+    padding: 0px 10px;
+    font-size: 18px;
+    color: #860000;
 }
 
 .highlight{
-    font-size: 36px;
-    color:crimson;
+    font-size: 40px;
+    color:#FC5954;
+    margin: 0px;
+    font-weight: 400;
 }
 
 .home{
