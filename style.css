@@ -341,10 +341,11 @@ p.instruction{
         max-width: 600px;
     }
     .highlight{
-        font-size: 60px;
+        font-size: 70px;
     }
     .detail p{
-        font-size: 50px;
+        font-size: 30px;
+        padding: 0px 80px;
     }
     .timer-count{
         font-size: 100px;
