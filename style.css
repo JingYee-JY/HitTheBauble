@@ -284,13 +284,12 @@ p.instruction{
 .show{
     margin-top: -20px;
     width: 100%;
-    margin-bottom: -10vh;
+    margin-bottom: -180px;
 }
 .additional{
-    position: absolute;
     text-align: center;
     color: white;
-    top: 49%;
+    margin-bottom: 20px;
 }
 
 .dark{
