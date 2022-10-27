@@ -52,7 +52,7 @@ startGameButton.addEventListener("click", () => {
 playAgain.addEventListener("click", () => {
     //playClickSound()
     //let delay = setTimeout(() => {
-        additional.classList.add("hide")    
+        additional.classList.add("hidden")    
         final.classList.add("hide")
         start.classList.remove("hide")
     //}, 200);
@@ -163,7 +163,7 @@ function updateCountDown(){
             final.style.backgroundImage = "url('./img/winBackground.png')"
             text.src = "./img/winText.png"
             show.src = "./img/win.png"
-            additional.classList.remove("hide")
+            additional.classList.remove("hidden")
             game.classList.add("hide")
             final.classList.remove("hide")
         }
